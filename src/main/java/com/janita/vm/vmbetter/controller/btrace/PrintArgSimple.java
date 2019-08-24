@@ -21,13 +21,16 @@ public class PrintArgSimple {
      * <p>使用方法： 1.btrace PID PrintArgSimple.java</p>
      * <p>使用方法： 2.正常调用方法即可看的btrace终端的输出</p>
      * 拦截
-     * @param pcn 类名
-     * @param pmn 方法名称
+     *
+     * @param pcn  类名
+     * @param pmn  方法名称
      * @param args 任何类型
      */
     @OnMethod(
-        clazz = "com.janita.vm.vmbetter.controller.BtraceController", //拦截的类
-        method = "arg1", //拦截的方法
+        //拦截的类
+        clazz = "com.janita.vm.vmbetter.controller.BtraceController",
+        //拦截的方法
+        method = "arg1",
         // 拦截的地方
         location = @Location(Kind.ENTRY))
     public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn, AnyType[] args) {
