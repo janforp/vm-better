@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/btrace")
 public class BtraceController {
 
-    @GetMapping("/arg1")
+    @GetMapping("/helloName")
     public String helloName(@RequestParam("name") String name) {
         return "hello," + name;
     }
 
-    @GetMapping("/arg2")
+    @GetMapping("/updateUser")
     public User updateUser(User user) {
         return user;
     }
