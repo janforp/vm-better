@@ -35,7 +35,9 @@ public class PrintArgSimple {
         location = @Location(Kind.ENTRY))
     public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn, AnyType[] args) {
         BTraceUtils.printArray(args);
-        BTraceUtils.println(pcn + "," + pmn);
+        BTraceUtils.println("类名称 ：" + pcn);
+        BTraceUtils.println("方法名称 ：" + pmn
+        );
         BTraceUtils.println();
     }
 }
