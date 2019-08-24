@@ -48,7 +48,7 @@ public class BtraceController {
             System.out.println(1 / 0);
             System.out.println("end...");
         } catch (Exception e) {
-            //
+            //使用btrace就可以重新这个被忽略的堆栈
         }
         return "success";
     }
