@@ -1,4 +1,4 @@
-package com.janita.vm.vmbetter.controller.btrace;
+package com.janita.vm.vmbetter.controller;
 
 import com.janita.vm.vmbetter.dto.User;
 import org.springframework.web.bind.annotation.GetMapping;
