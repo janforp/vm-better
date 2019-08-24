@@ -20,7 +20,7 @@ public class PrintReturn {
 
     @OnMethod(clazz = "com.janita.vm.vmbetter.controller.BtraceController",
               //拦截的方法名称
-              method = "arg1",
+              method = "helloName",
               //拦截返回值
               location = @Location(Kind.RETURN))
     public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn,

@@ -30,14 +30,13 @@ public class PrintArgSimple {
         //拦截的类
         clazz = "com.janita.vm.vmbetter.controller.BtraceController",
         //拦截的方法
-        method = "arg1",
+        method = "helloName",
         // 拦截的地方
         location = @Location(Kind.ENTRY))
     public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn, AnyType[] args) {
         BTraceUtils.printArray(args);
         BTraceUtils.println("类名称 ：" + pcn);
-        BTraceUtils.println("方法名称 ：" + pmn
-        );
+        BTraceUtils.println("方法名称 ：" + pmn);
         BTraceUtils.println();
     }
 }
