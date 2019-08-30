@@ -20,7 +20,7 @@ public class MetaSpaceOOMController {
     /**
      * -XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=32M
      *
-     * java -jar -XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=60M vm-better-0.0.1-SNAPSHOT.jar
+     * java -jar -XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=60M  -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./ vm-better-0.0.1-SNAPSHOT.jar
      * @return
      */
     @GetMapping("/metaSpace")
