@@ -17,6 +17,12 @@ public class MetaSpaceOOMController {
 
     private List<Class> classList = Lists.newArrayList();
 
+    /**
+     * -XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=32M
+     *
+     * java -jar -XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=60M vm-better-0.0.1-SNAPSHOT.jar
+     * @return
+     */
     @GetMapping("/metaSpace")
     public String metaSpace() {
         while (true) {
