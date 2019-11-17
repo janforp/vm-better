@@ -22,7 +22,6 @@ public class HeapMemoryController {
     /**
      * -Xmx32M -Xms32M
      * java -jar -Xmx32M -Xms32M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./ vm-better-0.0.1-SNAPSHOT.jar
-     * @return
      */
     @GetMapping("/heap")
     public String heap() {
