@@ -26,6 +26,7 @@ public class HeapMemoryController {
     @GetMapping("/heap")
     public String heap() {
         while (true) {
+            System.out.println("*****创建对象");
             User user = new User(1, UUID.randomUUID().toString());
             userList.add(user);
         }
